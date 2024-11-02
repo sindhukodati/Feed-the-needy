@@ -1,0 +1,25 @@
+setcookie("c1",$dn,time()+(86400 * 30));
+	setcookie("c2",$mob,time()+(86400 * 30));
+	setcookie("c3",$add,time()+(86400 * 30));
+	setcookie("c4",$cap,time()+(86400 * 30));
+if(isset($_COOKIE["c1"]) && isset($_COOKIE["c2"]) && isset($_COOKIE["c3"]) && isset($_COOKIE["c4"]))
+{
+echo "<tr><td> ". $_COOKIE["c1"]." </td>";
+echo " <td> ". $_COOKIE["c2"]." </td>";
+echo " <td> ". $_COOKIE["c3"]." </td>";
+echo " <td> ". $_COOKIE["c4"]." </td></tr>";
+}
+
+<script>
+	function del()
+	{
+
+	if(document.getElementById('$i').checked==true)
+	<?php $s=1 ?>
+	else
+	<?php $s=0 ?>
+	}
+	</script>
+	<?php
+	if($s==1)
+	mysql_query("delete from donor where name=$r[0]"); 
